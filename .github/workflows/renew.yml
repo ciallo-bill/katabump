@@ -18,7 +18,7 @@ jobs:
     - name: Random delay
       run: |
           # 14400 秒等于 4 个小时。每次运行会在此范围内随机暂停
-          DELAY=$((RANDOM % 14400))
+          DELAY=$((RANDOM % 1800))
           echo "本次任务将随机休眠 $DELAY 秒后开始执行..."
           sleep $DELAY
       # === 延时步骤结束 ===
